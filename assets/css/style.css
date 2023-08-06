@@ -1087,10 +1087,10 @@ body>.cart .footer .checkout {
     section.featuers .featuer .blob-icon svg {
         position: absolute;
         width: auto !important;
-        top: 0;
-        left: -8px;
+        top: 20px;
+        left: 12px;
         opacity: 1 !important;
-        height: 143px;
+        height: 105px;
     }
 
     svg:nth-child(1) {
