@@ -1144,3 +1144,12 @@ body>.cart .footer .checkout {
         font-size: 14px;
     }
 }
+@media only screen and (max-width: 400px){
+    .navigation-bar .container .btn-bar,
+    .navigation-bar .container a{
+        font-size: 12px;
+    }
+    .navigation-bar .container i{
+        font-size: 25px;
+    }
+}
