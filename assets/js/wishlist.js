@@ -101,4 +101,9 @@ function get_index(arr, value) {
     }
     return -1;
 }
-
+document.querySelector('.bar-wishlist').addEventListener('click',()=>{
+    if(!document.querySelector('body > .cart').classList.contains('hide')){
+        document.querySelector('body > .cart').classList.add('hide');
+    }
+    document.querySelector('body > .favourit').classList.remove('hide');
+});

@@ -802,7 +802,7 @@ body>.favourit {
     background-color: white;
     transform: translateX(400px);
     animation-name: slide-menu;
-    animation-duration: 0.2s;
+    animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     box-shadow: 0px 0px 20px rgb(78, 78, 78);
@@ -917,6 +917,19 @@ body>.cart .footer .checkout {
 }
 
 @media only screen and (max-width: 700px) {
+    body>.cart, body>.favourit {
+        width: 100% !important;
+        height: 85vh;
+        transform: translateY(100vh);
+    }
+    @keyframes slide-menu {
+        from{
+            transform: translateY(100vh);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
     .navigation-bar {
         display: block;
         position: fixed;
