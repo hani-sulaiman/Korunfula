@@ -916,7 +916,7 @@ body>.cart .footer .checkout {
     display: none;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 700px) {
     .navigation-bar {
         display: block;
         position: fixed;
