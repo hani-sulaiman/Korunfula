@@ -313,6 +313,7 @@ section .container>button i {
 
 .slider-products .products .product a {
     text-decoration: none;
+    color: var(--black-color);
 }
 
 .slider-products .products .product .image img {
@@ -353,6 +354,7 @@ section .container>button i {
     border: none;
     font-size: 15px;
     font-weight: 700;
+    color: var(--black-color);
 }
 
 .slider-products .products .product .content .buttons button i {
@@ -917,19 +919,29 @@ body>.cart .footer .checkout {
 }
 
 @media only screen and (max-width: 700px) {
-    body>.cart, body>.favourit {
+    section.categories .container {
+        top: -145px;
+    }
+    section.categories {
+        margin-top: 0px;
+    }
+    body>.cart,
+    body>.favourit {
         width: 100% !important;
         height: 78vh;
         transform: translateY(100vh);
     }
+
     @keyframes slide-menu {
-        from{
+        from {
             transform: translateY(100vh);
         }
-        to{
+
+        to {
             transform: translateY(0);
         }
     }
+
     .navigation-bar {
         display: block;
         position: fixed;
@@ -937,7 +949,7 @@ body>.cart .footer .checkout {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        background-color:#eee1b3cd;
+        background-color: #eee1b3e8;
         width: 98%;
         margin: 10px 0px;
         border-radius: 50px;
@@ -953,7 +965,7 @@ body>.cart .footer .checkout {
     }
 
     .navigation-bar .container a {
-        color:#1a270d;
+        color: #1a270d;
         text-decoration: none;
         font-size: 15px;
         font-weight: 900;
@@ -962,9 +974,10 @@ body>.cart .footer .checkout {
     .navigation-bar .container i {
         font-size: 30px;
         -webkit-text-stroke: 1px;
-        color:#1a270d;
+        color: #1a270d;
     }
-    .navigation-bar .container .btn-bar{
+
+    .navigation-bar .container .btn-bar {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -972,9 +985,10 @@ body>.cart .footer .checkout {
         font-size: 15px;
         font-weight: 900;
         background-color: transparent;
-        color:#1a270d;
+        color: #1a270d;
 
     }
+
     nav .main .third {
         display: none;
     }
@@ -1006,7 +1020,7 @@ body>.cart .footer .checkout {
     }
 
     section:nth-child(1) {
-        margin-top: 80px;
+        margin-top: 65px;
     }
 
     .slider-products .products .product {
@@ -1059,7 +1073,7 @@ body>.cart .footer .checkout {
     }
 
     main section.top-sellers {
-        margin-top: -248px;
+        margin-top: -290px;
     }
 
     section.categories .container .category a p {
@@ -1072,11 +1086,14 @@ body>.cart .footer .checkout {
 
     section.featuers .featuer .icon i {
         font-size: 50px;
-        left: 48px;
+        left: 40px;
     }
 
     section.featuers .featuer p {
+        position: absolute;
+        top: 120px;
         font-size: 15px;
+        text-align: center;
     }
 
     section.featuers .featuer {
@@ -1095,23 +1112,23 @@ body>.cart .footer .checkout {
 
     svg:nth-child(1) {
         position: absolute;
-        top: 330px;
-        right: 0px;
-        width: 381px;
+        top: 13px;
+        left: -147px;
+        width: 300px;
     }
 
     svg:nth-child(2) {
         position: absolute;
-        top: 1200px;
-        left: -73px;
-        width: 381px;
+        top: 1388px;
+        left: 16px;
+        width: 317px;
     }
 
     svg:nth-child(3) {
         position: absolute;
-        top: 1548px;
-        right: 0px;
-        width: 381px;
+        top: 1508px;
+        left: -100px;
+        width: 300px;
     }
 
     svg:nth-child(4) {
@@ -1119,8 +1136,9 @@ body>.cart .footer .checkout {
     }
 
     footer {
-        min-height: 50vh;
+        height: 80vh;
         padding: 23px;
+        padding-bottom: 162px;
     }
 
     footer .column {
@@ -1130,11 +1148,18 @@ body>.cart .footer .checkout {
         padding-top: 30px;
     }
 
+    footer a,
+    footer p {
+        font-size: 12px !important;
+    }
+
     footer .column h2,
     footer i {
         font-size: 16px;
     }
-
+    footer .contact i {
+        font-size: 18px;
+    }
     footer .column .logo img {
         width: 130px;
     }
@@ -1144,12 +1169,19 @@ body>.cart .footer .checkout {
         font-size: 14px;
     }
 }
-@media only screen and (max-width: 400px){
+
+@media only screen and (max-width: 400px) {
+    .navigation-bar {
+        margin-bottom: 20px;
+    }
+
     .navigation-bar .container .btn-bar,
-    .navigation-bar .container a{
+    .navigation-bar .container a {
         font-size: 12px;
     }
-    .navigation-bar .container i{
+
+    .navigation-bar .container i {
         font-size: 25px;
     }
+
 }
