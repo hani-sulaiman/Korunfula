@@ -919,7 +919,7 @@ body>.cart .footer .checkout {
 @media only screen and (max-width: 700px) {
     body>.cart, body>.favourit {
         width: 100% !important;
-        height: 85vh;
+        height: 78vh;
         transform: translateY(100vh);
     }
     @keyframes slide-menu {
