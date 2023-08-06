@@ -174,7 +174,7 @@ nav .secondry .links a:hover {
 #myCarousel {
     width: 100%;
     position: relative;
-    top: 160px;
+    top: 159px;
     height: 522px !important;
 }
 
@@ -420,9 +420,11 @@ main section.categories .title img {
     margin: auto;
     z-index: 0;
 }
-main section.top-sellers{
+
+main section.top-sellers {
     margin-top: -60px;
 }
+
 section.offers {
     margin: 50px 0px;
     display: flex;
@@ -537,7 +539,7 @@ footer {
     flex-direction: row-reverse;
     justify-content: space-around;
     flex-wrap: wrap;
-    min-height:40vh;
+    min-height: 40vh;
 }
 
 footer p,
@@ -556,13 +558,18 @@ footer .column.site {
     flex-direction: column;
     align-items: end;
 }
-footer .column h2,footer i{
+
+footer .column h2,
+footer i {
     color: var(--main-color);
 }
-footer .column p,a{
+
+footer .column p,
+a {
     text-decoration: none;
     color: #f3f3f3;
 }
+
 footer .column.site p {
     direction: rtl;
     margin-right: 13px;
@@ -570,34 +577,473 @@ footer .column.site p {
     color: var(--main-color);
 
 }
-footer .column.site p.subtitle{
+
+footer .column.site p.subtitle {
     color: #f3f3f3;
 }
+
 footer .column .logo img {
     width: 200px;
     border-radius: 100px;
 }
-footer .column.short-links
-,footer .column.myaccount
-,footer .column.contact{
+
+footer .column.short-links,
+footer .column.myaccount,
+footer .column.contact {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     direction: rtl;
     font-size: 17px;
 }
-footer .column a{
+
+footer .column a {
     font-size: 15px;
 }
-footer a:hover{
+
+footer a:hover {
     color: var(--main-color);
 }
-footer .contact i{
+
+footer .contact i {
     font-size: 25px;
 }
-footer .contact div{
+
+footer .contact div {
     display: flex;
 }
-footer .contact div p{
-   margin: 0 20px;
+
+footer .contact div p {
+    margin: 0 20px;
+}
+
+
+.payment-methods {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 100px 0px;
+}
+
+.payment-methods h2 {
+    text-align: center;
+    margin: 62px;
+}
+
+.payment-methods .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.payment-methods .container img {
+    height: 150px;
+    transition: 0.2s;
+    transform: scale(1);
+}
+
+.payment-methods .container img:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.payment-methods .total {
+    background-color: var(--main-color);
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-methods .total p {
+    direction: rtl;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.payment-methods .total p:nth-child(2) {
+    margin: 0;
+    background: #fff;
+    border-radius: 12px;
+    width: 50%;
+    padding: 5px 0px;
+}
+
+.card-details {
+    margin: auto;
+    margin-top: 50px;
+    padding: 100px 0px;
+    transform: translateY(-20px);
+}
+
+.card-details form .forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-details form .forms .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    direction: rtl;
+    margin: 10px;
+}
+
+.card-details form .forms .row>div {
+    display: flex;
+    width: auto !important;
+    flex-direction: column;
+}
+
+.card-details form .forms .row>div input {
+    width: 300px;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid #c6c6c6;
+    text-indent: 3px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    outline-color: var(--secondry-color);
+}
+
+.card-details img {
+    position: relative;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+
+}
+
+.card-details form {
+    padding-top: 100px;
+    border-radius: 20px;
+    height: 350px;
+    width: 75%;
+    margin: auto;
+    background-color: #FCFCE8;
+}
+
+.card-details form .pay-button {
+    display: flex;
+    justify-content: center;
+}
+
+.card-details form .pay-button button {
+    width: 150px;
+    margin: 20px;
+    border: none;
+    background-color: #0c0c0c;
+    color: #fff;
+    height: 35px;
+    border-radius: 7px;
+}
+
+.card-details form .pay-button #pay {
+    background-color: var(--secondry-color);
+}
+
+.hide {
+    display: none;
+}
+
+.fade-out {
+    animation: fade-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.fade-in {
+    animation: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 0.1;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+body>.cart,
+body>.favourit {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    height: 100vh;
+    width: 25%;
+    background-color: white;
+    transform: translateX(400px);
+    animation-name: slide-menu;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    box-shadow: 0px 0px 20px rgb(78, 78, 78);
+}
+
+@keyframes slide-menu {
+    from {
+        transform: translateX(400px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+body>.cart .nav,
+body>.favourit .nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border-bottom: 1px solid rgb(120, 120, 120);
+}
+
+body>.cart .nav .right button,
+body>.favourit .nav .right button {
+    background-color: transparent;
+    border: none;
+}
+
+body>.cart .nav .right button i,
+body>.favourit .nav .right button i {
+    font-size: 30px;
+}
+
+body>.favourit .nav .left i,
+body>.cart .nav .left i {
+    font-size: 25px;
+    margin: 5px;
+    -webkit-text-stroke: 1px;
+    color: var(--secondry-color);
+}
+
+body>.favourit .products,
+body>.cart .products {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 500px;
+}
+
+body>.cart .products .product,
+body>.favourit .products .product {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    align-items: e;
+}
+
+body>.cart .products .product .price {
+    /* direction: inherit; */
+    direction: rtl;
+    margin-top: 25px;
+}
+
+body>.favourit .products .product .delete,
+body>.cart .products .product .delete {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+body>.favourit .products .product p {
+    align-self: center;
+    margin: 0;
+}
+
+body>.favourit .products .product img,
+body>.cart .products .product img {
+    max-height: 80px;
+}
+
+body>.cart .products .product .qty .qty-control button {
+    background-color: var(--secondry-color);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    width: 20px;
+}
+
+body>.cart .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgb(120, 120, 120);
+}
+
+body>.cart .footer .checkout {
+    /* direction: rtl; */
+    width: 90%;
+    margin: 30px;
+    height: 40px;
+    background-color: var(--secondry-color);
+    color: #fff;
+    font-size: 18px;
+    border: none;
+}
+
+@media only screen and  (max-width: 576px) {
+    nav .main .third{
+        display: none;
+    }
+    nav .main .part .search form input{
+        width: 130px;
+    }
+    nav .main .part img {
+        height: 50px;
+    }
+    nav .main .part .search form button {
+        width: 40px;
+    }
+    nav .secondry{
+        display: none;
+    }
+    #myCarousel{
+        top: 70px;
+        height: auto !important;
+    }
+    #myCarousel .carousel-item img {
+        height: auto !important;
+        width: 100% !important;
+    }
+    section:nth-child(1) {
+        margin-top: 80px;
+    }
+    .slider-products .products .product {
+        width: 125px;
+        display: flex;
+        min-width: 125px;
+        flex-direction: column;
+        margin: 0 8px;
+        border: 2px solid var(--main-color);
+    }
+    .slider-products .products .product .image img {
+        height: 100px;
+    }
+    .slider-products .products .product .content .title {
+        font-size: 0.9rem;
+    }
+    .slider-products .products .product .content .price {
+        font-size: 0.8rem;
+    }
+    .slider-products .products .product .content .buttons button {
+        font-size: 10px;
+        padding: 0;
+    }
+    section .container>button.right {
+        right: 12px;
+        top: -42px;
+    }
+    section .container>button.left {
+        left: 12px;
+        top: -42px;
+    }
+    section .container>button {
+        width: 20px;
+        height: 100px;
+    }    
+    .slider-products .products .product .content {
+        height: 88px;
+    }
+    section.categories .container .category a img{
+        height: 100px;
+    }
+    main section.top-sellers {
+        margin-top: -248px;
+    }
+    section.categories .container .category a p {
+        font-size: 14px;
+    }
+    section.offers .cover img {
+        height: 170px;
+    }
+    section.featuers .featuer .icon i {
+        font-size: 50px;
+        left: 48px;
+    }
+    section.featuers .featuer p {
+        font-size: 15px;
+    }
+    section.featuers .featuer {
+        margin: 0;
+        height: 200px;
+    }
+    section.featuers .featuer .blob-icon svg {
+        position: absolute;
+        width: auto !important;
+        top: 0;
+        left: 0px;
+        opacity: 1 !important;
+        height: 143px;
+    }
+    svg:nth-child(1) {
+        position: absolute;
+        top: 330px;
+        right: 0px;
+        width: 381px;
+    }
+    
+    svg:nth-child(2) {
+        position: absolute;
+        top: 1200px;
+        left: -73px;
+        width: 381px;
+    }
+    
+    svg:nth-child(3) {
+        position: absolute;
+        top: 1548px;
+        right: 0px;
+        width: 381px;
+    }
+    
+    svg:nth-child(4) {
+      display: none;
+    }
+    footer{
+        min-height: 50vh;
+        padding: 23px;
+    }
+    footer .column {
+        padding: 0;
+        width: 50%;
+        flex-basis: 45%;
+        padding-top: 30px;
+    }
+    footer .column h2, footer i {
+        font-size: 16px;
+    }
+    footer .column .logo img {
+        width: 130px;
+    }
 }
