@@ -3,7 +3,7 @@ class Slider {
         this.element = document.querySelector(selector);
         this.scaleSlider = 0;
         this.productsSelector = `.${this.element.className} .products`;
-
+        this.items=top_products.id.length;
         if (this.element.querySelector('button.left')) {
             this.element.querySelector('button.left').addEventListener('click', () => {
                 if(this.isLaptop()){
@@ -12,7 +12,7 @@ class Slider {
                     }
                 }else{
                     if (this.scaleSlider < 0) {
-                        this.scaleSlider += 100;
+                        this.scaleSlider += 160;
                     }
                 }
                 this.sliderProducts();
@@ -26,8 +26,8 @@ class Slider {
                         this.scaleSlider -= 360;
                     }
                 }else{
-                    if (this.scaleSlider >= -300) {
-                        this.scaleSlider -= 100;
+                    if (this.scaleSlider >= -150*(this.items - 2)) {
+                        this.scaleSlider -= 160;
                     }   
                 }
                 this.sliderProducts();

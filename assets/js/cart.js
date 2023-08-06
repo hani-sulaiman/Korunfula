@@ -2,10 +2,10 @@
  -- prodcut data from backend --
 */
 var top_products = {
-  id: [1, 2,3,4],
-  names: ["شاي الشتاء", "شاي الاحمر","شاي الشتاء", "شاي الاحمر"],
-  img: ["assets/images/winter-tea.jpg", "assets/images/winter-tea.jpg","assets/images/winter-tea.jpg", "assets/images/winter-tea.jpg"],
-  price: [20.40, 85.0,20,20],
+  id: [1, 2,3,4,5],
+  names: ["شاي الشتاء", "شاي الاحمر","شاي الشتاء", "شاي الاحمر", "شاي الاحمر"],
+  img: ["assets/images/winter-tea.jpg", "assets/images/winter-tea.jpg","assets/images/winter-tea.jpg", "assets/images/winter-tea.jpg", "assets/images/winter-tea.jpg"],
+  price: [20.40, 85.0,20,20,20],
 };
 
 /*
