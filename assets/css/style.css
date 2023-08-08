@@ -385,6 +385,11 @@ section.categories .container .category a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    transition: 0.3s;
+}
+section.categories .container .category a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 section.categories .container .category a p {
