@@ -45,6 +45,11 @@ function back() {
   }, 100);
 
 }
+if(getCookie('cart')){
+  document.querySelector('.total-pay').innerHTML=JSON.parse(getCookie('cart')).total;
+}else{
+  document.querySelector('.total-pay').innerHTML=" 0.0";
+}
 visaCard.addEventListener('click', visa);
 masterCard.addEventListener('click', master);
 americanExpressCard.addEventListener('click', americanExpress);

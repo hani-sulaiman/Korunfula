@@ -21,14 +21,24 @@ var cart = {
 };
 
 /* functions of cart */
-show_products(top_products, "best-products");
-show_products(top_products, "top-sellers");
+if (in_main_page()) {
+  show_products(top_products, "best-products");
+  show_products(top_products, "top-sellers");
+}
+document.querySelector('.checkout').addEventListener('click',()=>{
+     window.location.href="payment.html";
+});
+function in_main_page() {
+  if (document.querySelector('.best-products')) {
+    return true;
+  } else return false;
+}
 refresh_cart();
-document.querySelector('.cart-btn').addEventListener('click', () => [
-  document.querySelector('body > .cart').classList.remove('hide')
-]);
+document.querySelector('.cart-btn').addEventListener('click', () => {
+  document.querySelector('body > .cart').classList.remove('hide');
+});
 document.querySelector('.btnexit').addEventListener('click', () => {
-  document.querySelector('body > .cart').classList.add('hide')
+    document.querySelector('body > .cart').classList.add('hide');
 });
 document.querySelectorAll('.add-to-cart').forEach((element) => {
   element.addEventListener('click', () => {
@@ -49,6 +59,9 @@ function AddEventCheckbox() {
   document.querySelectorAll('input.checkProduct').forEach((element) => {
     element.addEventListener('click', () => {
       calc_final_total();
+      var expirationDate = new Date();
+      expirationDate.setDate(expirationDate.getDate() + 7);
+      document.cookie = "cart=" + encodeURIComponent(JSON.stringify(cart)) + "; expires=" + expirationDate.toUTCString() + "; path=/";
     });
   });
 }
